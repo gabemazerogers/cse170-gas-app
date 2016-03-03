@@ -36,5 +36,13 @@
 			"note" : "I think I should change my oil soon",
 			"miles" : "220"
 		}
+	],
+
+	"maintenance" : [
+		{
+			"name" : "Filled Tires",
+			"date" : "2/10/2016",
+			"description" : "Front tire on the left was really flat"
+		}
 	]
 }
