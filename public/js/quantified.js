@@ -3,39 +3,8 @@
 //    console.log(json); // this will show the info it in firebug console
 //});
 
-var fillups = {
-    "fillups": [
-        {
-            "date" : "2 February, 2016",
-            "name" : "Chevron",
-            "address" : "7475 La Jolla Blvd",
-            "price" : "40.29",
-            "amount" : "12.5",
-            "note" : "The gas station was really busy",
-            "miles" : "203.8"
-        },
-        {
-            "date" : "3 February, 2016",
-            "name" : "Chevron",
-            "address" : "7475 La Jolla Blvd",
-            "price" : "60.29",
-            "amount" : "14.5",
-            "note" : "The gas station was really busy",
-            "miles" : "240.8"
-        },
-        {
-            "date" : "4 February, 2016",
-            "name" : "Chevron",
-            "address" : "7475 La Jolla Blvd",
-            "price" : "30.29",
-            "amount" : "14.5",
-            "note" : "The gas station was really busy",
-            "miles" : "340.8"
-        }
-    ]
-};
 
-
+$.getJSON("data.json", function(fillups){
     var dateList = [];
     var priceList = [];
     var mpgList = [];
@@ -56,3 +25,7 @@ var fillups = {
         labels: dateList,
         series: [mpgList]
     });
+
+});
+
+

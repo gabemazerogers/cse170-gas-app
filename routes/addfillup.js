@@ -1,4 +1,4 @@
-var data = require("../data.json");
+var data = require("../public/data.json");
 
 exports.addFillup = function(req, res) { 
 	console.log("hi");

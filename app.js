@@ -6,7 +6,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var exhbs = require('express3-handlebars')
+var exhbs = require('express3-handlebars');
 var hbs = exhbs.create({
 	helpers: {
 		calculatePPG : function(price, amount) {return Math.round((price / amount) * 100) / 100; },
@@ -27,7 +27,7 @@ var preferences = require('./routes/preferences');
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 4000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

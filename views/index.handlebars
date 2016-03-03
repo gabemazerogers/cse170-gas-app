@@ -110,54 +110,53 @@
             <h2 class="center light-blue-text"><i class="material-icons">local_gas_station</i></h2>
             <h5 class="center">Recent Fillups</h5>
 
-            
-            <table class="centered fillup-fable">
-            <thead>
-            <tr>
-            <th>More Info</th>
-            <th data-field="date">Date</th>
-            <th data-field="name">Gas Station</th>
-            <th data-field="price">Price</th>
-            <th data-field="mpg">MPG</th>
-            </tr>
-            </thead>
 
-            <tbody class="tbodz">
-<!--             <tr>
-            <td>2/3/2016</td>
-            <td>Chevron</td>
-            <td>7475 La Jolla Blvd</td>
-            <td>$2.84/regular</td>
-            <td>3 miles away</td>
-            </tr>
-            <tr>
-            <td>1/18/2016</td>
-            <td>Chevron</td>
-            <td>7475 La Jolla Blvd</td>
-            <td>$2.97/regular</td>
-            <td>3 miles away</td>
-            </tr>    
-            </tbody> -->
-            {{#each fillups}}
-            <tr>
+              <table class="centered fillup-fable">
+                  <thead>
+                  <tr>
+                      <th data-field="date">Date</th>
+                      <th data-field="name">Gas Station</th>
+                      <th data-field="ppg">PPG</th>
+                      <th data-field="mpg">MPG</th>
+                      <th data-field="address">Address</th>
+                      <th data-field="price">Total</th>
+                      <th data-field="amount">Amount</th>
+                      <th data-field="miles">Miles</th>
+                      <th data-field="note">Note</th>
+                  </tr>
+                  </thead>
 
-  <!-- Dropdown Structure -->
-            <td> <a class='dropdown-button btn' href='#' data-activates='dropdown1'> </a> </td>
-            <td class="date"><a class="dateItem">{{date}}</a></td>
-            <td class="name"><a class="nameItem">{{name}}</a></td>
-            <td class="price"><a class="ppgItem">${{calculatePPG price amount}}</a></td>
-            <td class="mpg"><a class="mpgItem">{{calculateMPG miles amount}} mpg</a></td>
-            <ul id='dropdown1' class='dropdown-content'>
-            <li> Address: {{address}}</li>
-            <li> Total Price: ${{price}}</li>
-            <li> Total Amount: {{amount}} gallons</li>
-            <li> Total Miles: {{miles}} miles</li>
-            <li> Note: {{note}}</li>
-            </ul>
-            </tr>
-            {{/each}}
-            </tbody>
-            </table>
+                  <tbody class="tbodz">
+                  <!--             <tr>
+                              <td>2/3/2016</td>
+                              <td>Chevron</td>
+                              <td>7475 La Jolla Blvd</td>
+                              <td>$2.84/regular</td>
+                              <td>3 miles away</td>
+                              </tr>
+                              <tr>
+                              <td>1/18/2016</td>
+                              <td>Chevron</td>
+                              <td>7475 La Jolla Blvd</td>
+                              <td>$2.97/regular</td>
+                              <td>3 miles away</td>
+                              </tr>
+                              </tbody> -->
+                  {{#each fillups}}
+                      <tr>
+                          <td class="date">{{date}}</td>
+                          <td class="name">{{name}}</td>
+                          <td class="ppg">${{calculatePPG price amount}}</td>
+                          <td class="mpg">{{calculateMPG miles amount}}</td>
+                          <td class="address">{{address}}</td>
+                          <td class="price">${{price}}</td>
+                          <td class="amount">{{amount}} gallons</td>
+                          <td class="miles">{{miles}} miles</td>
+                          <td class="note">{{note}}</td>
+                      </tr>
+                  {{/each}}
+                  </tbody>
+              </table>
 
 
             </div>
@@ -235,16 +234,6 @@
         <input type="submit" id="submitBtn" class="btn-large waves-effect waves-light orange" value="Update Preferences"></input>
     </div>
     </div>
-  </div>
-
-  <h2 class="fillupHeader">Hi</h2>
-  <div class="container fillupCon">
-      <div class="row center">
-          <div class="col s6">
-
-              <p class="fillupDate"></p>
-          </div>
-      </div>
   </div>
 
 
@@ -345,7 +334,9 @@
 //      });
 //  });
       $(function() {
-        var dataTable = $('.fillup-fable').dataTable();
+          var dataTable = $('.fillup-fable').dataTable({
+              "scrollX" : true
+          });
 
           //TODO MAKE THE ITEMS APPEAR AT THE NEW DIV
           $('.dateItem').click(function() {
