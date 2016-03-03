@@ -11,8 +11,6 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
-
-
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
@@ -46,25 +44,25 @@
       </div>
       <div class="row center">
           <style>
-            .map {
-                position: relative;
-                padding-bottom: 75%; // This is the aspect ratio
-                height: 0;
-                overflow: hidden;
-            }
-            .map iframe {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100% !important;
-                height: 100% !important;
-            }
+              .map {
+                  position: relative;
+                  padding-bottom: 75%; // This is the aspect ratio
+              height: 0;
+                  overflow: hidden;
+              }
+              .map iframe {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100% !important;
+                  height: 100% !important;
+                  padding: 30px;
+              }
 
-            .scrolloff {
-                pointer-events: none;
-          }
-        </style>
-
+              .scrolloff {
+                  pointer-events: none;
+              }
+          </style>
         <script>
             $(document).ready(function () {
 
@@ -357,6 +355,6 @@
   </script>
 
 
-
+    {{> googleAnalytics}}
   </body>
 </html>

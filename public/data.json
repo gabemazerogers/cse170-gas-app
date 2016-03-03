@@ -7,7 +7,34 @@
 			"price" : "40.29",
 			"amount" : "12.5",
 			"note" : "The gas station was really busy",
-			"miles" : "203.8"
+			"miles" : "283.8"
+		},
+		{
+			"date" : "12 February, 2016",
+			"name" : "Chevron",
+			"address" : "7475 La Jolla Blvd",
+			"price" : "41.29",
+			"amount" : "14.5",
+			"note" : "I should inflate my tires",
+			"miles" : "300.8"
+		},
+		{
+			"date" : "24 February, 2016",
+			"name" : "Chevron",
+			"address" : "7475 La Jolla Blvd",
+			"price" : "49.29",
+			"amount" : "14.5",
+			"note" : "I need a car wash",
+			"miles" : "310.8"
+		},
+		{
+			"date" : "1 March, 2016",
+			"name" : "Chevron",
+			"address" : "7475 La Jolla Blvd",
+			"price" : "25.00",
+			"amount" : "10",
+			"note" : "I think I should change my oil soon",
+			"miles" : "220"
 		}
 	]
 }
