@@ -1,14 +1,15 @@
 /**
  * Created by gabe on 3/3/16.
  */
-var maintenance = require('../public/data.json');
+var data = require('../maintenance.json');
 
 exports.addMaintenance = function(req, res) {
+	console.log("hey");
     var newMaintenance = {
-        "name" : req.body.name,
-        "date" : req.body.date,
-        "description" : req.body.description
+        "name" : req.query.name,
+        "date" : req.query.date,
+        "description" : req.query.description
     };
-    maintenance["maintenance"].push(newMaintenance);
-    res.render('maintenance', maintenance);
+    data["maintenance"].push(newMaintenance);
+    res.render('maintenance', data);
 };

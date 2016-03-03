@@ -1,8 +1,6 @@
-var maintenance = require('../public/data.json');
+var data = require('../maintenance.json');
 
 exports.viewMaintenance = function(req, res) {
-    console.log(maintenance);
-
-    res.render('maintenance', maintenance);
-
+    console.log(data);
+    res.render('maintenance', data);
 };
