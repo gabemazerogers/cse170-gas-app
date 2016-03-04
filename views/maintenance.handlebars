@@ -32,8 +32,9 @@
     <input type="submit" id="submitBtn" class="btn btn-default" value="Add the Maintenance"></input>
 </form>
 <br>
+    <h3>Maintenance Logs</h3>
 {{#each maintenance}}
-    <p class="header col s12 light">{{name}} - {{date}}</p>
+    <h5 class="header col s12 light">{{name}} - {{date}}</h5>
     <p>{{description}}</p>
 {{/each}}
 
