@@ -29,7 +29,7 @@ var addmaintenance = require('./routes/addmaintenance');
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 4000);
+app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
