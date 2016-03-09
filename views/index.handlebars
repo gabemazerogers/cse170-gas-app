@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.11/css/jquery.dataTables.css">
 </head>
 <body>
-  {{> nav}}
+  {{> homeNav}}
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
@@ -148,97 +148,6 @@
     <div class="section">
     </div>
   </div>
-
-    
-  <!-- Modal Structure -->
-  <div id="preferences" class="modal">
-    <div class="modal-content container">
-    <div class="row">
-    <div class col s8>
-      <h4>Preferences</h4>
-      <p>Distance to Price Favoring</p>
-         <form action="#">
-            <p class="range-field">
-              <input type="range" id="pref" name ="pref" min="0" max="100" />
-            </p>
-          </form>
-        <div class="input-field col s12">
-          <input id="odometer" type="number" name="odometer" class="validate">
-          <label for="odometer">Odometer Reading(Total Miles):</label>
-        </div>
-        <div class="input-field col s12">
-          <input id="expectedmpg" type="number" name="expectedmpg" class="validate">
-          <label for="expectedmpg">Expected MPG:</label>
-        </div>
-        <div class="input-field col s12">
-          <input id="oil" type="number" name="oil" class="validate">
-          <label for="oil">Miles at Last Oil Change:</label>
-        </div>
-      <div class="input-field col s12">
-        <select>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">87</option>
-          <option value="2">89</option>
-          <option value="3">91</option>
-          <option value="4">Diesel</option>
-        </select>
-        <label>Fuel Type</label>
-      </div>
-        <div class="input-field col s4">
-        <select>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">2014</option>
-        </select>
-        <label>Year</label>
-      </div>
-        <div class="input-field col s4">
-        <select>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">Honda</option>
-        </select>
-        <label>Make</label>
-      </div>
-        <div class="input-field col s4">
-        <select>
-          <option value="" disabled selected>Choose your option</option>
-          <option value="1">Civic</option>
-        </select>
-        <label>Model</label>
-      </div>
-    
-        </div>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" id="modal-agree" class="modal-action modal-close waves-effect waves-light orange btn-flat close-sidebar">Update Preferences</a>
-    </div>
-    </div>
-  </div>
-
-
- <!-- Modal Structure -->
-  <div id="help" class="modal">
-    <div class="modal-content container">
-    <div class="row">
-    <div class col s8>
-      <h4>Help Page</h4>
-      <p>Click the "Add Fill-up" button below to add a recent fill up</p>
-      <p>To set your destinations used in calculating the best gas station for you, click "Frequent Destinations" to manage your destinations</p>
-      <p>For settings such as how much you value money vs. time, click "Preferences".</p>
-      <p>The "Tips and More Info" page contains tips and tricks recommended for you to get maximize your automobile experience</p>
-      <p>The waypoint on the map below marks your recommended gas station, while the star represents your current location.</p>
-         
-    
-        </div>
-        </div>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" id="modal-agree" class="modal-action modal-close waves-effect waves-light orange btn-flat close-sidebar">Back</a>
-    </div>
-  </div>
-
-
-
 
 
     <div id="fillup" class="modal">
