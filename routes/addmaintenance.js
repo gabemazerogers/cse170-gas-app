@@ -8,7 +8,7 @@ exports.addMaintenance = function(req, res) {
     var newMaintenance = {
         "name" : req.query.name,
         "date" : req.query.date,
-        "description" : req.queryß.description
+        "description" : req.query.description
     };
     data["maintenance"].push(newMaintenance);
     res.render('maintenance', data);
