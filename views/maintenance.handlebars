@@ -22,7 +22,7 @@
         <label for="name">Maintenance Title (Filled Tires, Changed Oil, etc)</label>
     </div>
     <div class="input-field col s12">
-        <input id="date" type="text" class="form-control" name="date">
+        <input id="date" type="text" class="datepicker" name="date">
         <label for="date">Date</label>
     </div>
     <div class="input-field col s12">
@@ -49,5 +49,11 @@
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
 <script src="js/init.js"></script>
+<script>
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 15 // Creates a dropdown of 15 years to control year
+    });
+</script>
 </body>
 </html>
